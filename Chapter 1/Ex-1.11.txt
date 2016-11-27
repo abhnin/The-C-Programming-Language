@@ -1,0 +1,12 @@
+Exercise 1-11. How would you test the word count program? What kinds of input are most
+likely to uncover bugs if there are any?
+
+1. Blank File
+2. Only tabs
+3. Only whitespaces
+4. Only newlines
+5. Combinition of 2&3 2$4 3&4
+6. One Word
+7. Space after last word of the input stream
+
+P.S I got 1st, 3rd, 6th and 7th wrong at first
