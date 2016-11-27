@@ -2,7 +2,7 @@
 
 main()
 {
-	int wc, ch, prev;
+	int ch, prev;
 	prev = 9999;
 
 	while( (ch = getchar()) != EOF ){
