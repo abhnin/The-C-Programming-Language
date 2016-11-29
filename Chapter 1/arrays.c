@@ -1,22 +1,31 @@
 #include <stdio.h>
-/* count digits, white space, others */
-main()
-{
-int c, i, nwhite, nother;
-int ndigit[10];
-nwhite = nother = 0;
-for (i = 0; i < 10; ++i)
-ndigit[i] = 0;
-while ((c = getchar()) != EOF)
-if (c >= '0' && c <= '9')
-++ndigit[c-'0'];
-else if (c == ' ' || c == '\n' || c == '\t')
-++nwhite;
-else
-++nother;
-printf("digits =");
-for (i = 0; i < 10; ++i)
-printf(" %d", ndigit[i]);
-printf(", white space = %d, other = %d\n",
-nwhite, nother);
+
+main() {
+	int ndigit[10];
+	int other, white, ch;
+
+	white = other = 0;
+
+	for (int i = 0; i < 10; ++i) {
+		ndigit[i] = 0;
+	}
+
+	while((ch = getchar()) != EOF) {
+		if (ch == ' ' || ch == '\n' || ch == '\t')
+			++white;
+		else if (ch >= '0' && ch <= '9')
+		{
+			++ndigit[ch - '0'];
+		}
+		else
+			++other;
+	}
+
+	printf("\nWhitespaces - %d\n\n", white);
+	
+	for (int i = 0; i < 10; ++i)
+		printf("%d - %d\n",i, ndigit[i]);
+
+	printf("\nOthers - %d\n", other);
+
 }
