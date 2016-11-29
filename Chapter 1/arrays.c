@@ -6,20 +6,16 @@ main() {
 
 	white = other = 0;
 
-	for (int i = 0; i < 10; ++i) {
+	for (int i = 0; i < 10; ++i)
 		ndigit[i] = 0;
-	}
 
-	while((ch = getchar()) != EOF) {
+	while((ch = getchar()) != EOF)
 		if (ch == ' ' || ch == '\n' || ch == '\t')
 			++white;
 		else if (ch >= '0' && ch <= '9')
-		{
 			++ndigit[ch - '0'];
-		}
 		else
 			++other;
-	}
 
 	printf("\nWhitespaces - %d\n\n", white);
 	
