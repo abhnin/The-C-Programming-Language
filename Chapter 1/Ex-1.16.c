@@ -4,7 +4,7 @@
 int getlinex(char s[], int lim);
 void copy(char from[], char to[]);
 
-main()
+main()	//the length of arbitrary long input lines, and as much as possible of the text.
 {	
 	int len, max, count;
 	char line[MAXLINE], longest[MAXLINE];
