@@ -15,4 +15,7 @@ for filename in glob.glob('*.c'):
         lines += 1
     f.close()
     
+f = open('summary.txt', 'w')
+f.write('Number of lines of code written in this chapter: ' + str(lines))
+f.close()
 print (lines)
